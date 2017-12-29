@@ -11,8 +11,6 @@ class ConsoleDisplay(object):
         curses.noecho()
         curses.cbreak()
         self.win = curses.newwin(height, width, begin_y, begin_x)
-        self.stdscr.addstr(0, 0, "Current mode: Typing mode")
-        # self.win.box('*', '*')
         self.stdscr.refresh()
         LOG.info('ConsoleDisplay ready')
 
